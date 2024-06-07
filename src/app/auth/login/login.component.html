@@ -1,20 +1,22 @@
-<h1>Login</h1>
+<div class="col-12 col-md-8 col-lg-6 mx-auto">
+  <h1>Login</h1>
 
-<form>
-  <input
-    type="email"
-    name="email"
-    [(ngModel)]="authData.email"
-    placeholder="email"
-    class="form-control"
-  />
-  <input
-    type="password"
-    name="password"
-    [(ngModel)]="authData.password"
-    placeholder="password"
-    class="form-control mt-3"
-  />
+  <form>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="authData.email"
+      placeholder="email"
+      class="form-control"
+    />
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="authData.password"
+      placeholder="password"
+      class="form-control mt-3"
+    />
 
-  <button (click)="login()" class="btn btn-primary mt-3">Accedi</button>
-</form>
+    <button (click)="login()" class="btn btn-primary mt-3">Accedi</button>
+  </form>
+</div>
