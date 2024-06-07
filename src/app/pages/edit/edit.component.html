@@ -1,0 +1,57 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Edit Movie</h2>
+  <form
+    (ngSubmit)="editMovie()"
+    class="needs-validation"
+    [class.was-validated]="formSubmitted"
+    novalidate
+  >
+    <div class="form-group">
+      <label for="title">Titolo</label>
+      <input
+        type="text"
+        id="title"
+        [(ngModel)]="movie.title"
+        name="title"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">Il titolo è obbligatorio.</div>
+    </div>
+    <div class="form-group">
+      <label for="description">Descrizione</label>
+      <textarea
+        id="description"
+        [(ngModel)]="movie.description"
+        name="description"
+        class="form-control"
+        rows="3"
+        required
+      ></textarea>
+      <div class="invalid-feedback">La descrizione è obbligatoria.</div>
+    </div>
+    <div class="form-group">
+      <label for="cover">Cover URL</label>
+      <input
+        type="text"
+        id="cover"
+        [(ngModel)]="movie.cover"
+        name="cover"
+        class="form-control"
+        required
+      />
+      <div class="invalid-feedback">Il cover URL è obbligatorio.</div>
+    </div>
+    <div class="form-group form-check">
+      <input
+        type="checkbox"
+        id="available"
+        [(ngModel)]="movie.available"
+        name="available"
+        class="form-check-input"
+      />
+      <label for="available" class="form-check-label">Disponibile</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Salva Modifiche</button>
+  </form>
+</div>

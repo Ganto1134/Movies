@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Dashboard</h2>
+  <div>
+    <h3>Utente Loggato</h3>
+    <p>{{ user.nome }}</p>
+  </div>
+  <div>
+    <h3>Tutti gli Utenti Registrati</h3>
+    <ul>
+      <li *ngFor="let user of allUsers">
+        {{ user.nome }}
+      </li>
+    </ul>
+  </div>
+</div>

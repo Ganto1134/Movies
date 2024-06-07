@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "email": "antoniorsashd@gmail.com",
+      "password": "$2a$10$aIauI9llJNSDOdM67doBY.5zb6.N0PkDDXjP/llYkvclcZxFrbDKS",
+      "nome": "antonio g",
+      "id": 1
+    }
+  ],
+  "movies-popular": [
+    {
+      "title": "Liquorice Pizza",
+      "description": "Il miglior film sulla pizza",
+      "cover": "https://pad.mymovies.it/filmclub/2021/09/074/locandinapg1.jpg",
+      "available": true,
+      "id": 1
+    },
+    {
+      "title": "Pizza The Movie",
+      "description": "Quattro anni dopo la laurea, Kevin Miller non può andare avanti con la sua vita senza trovare un modo per riconquistare la sua vecchia cotta del liceo. E il suo mondo viene sconvolto quando accetta un lavoro come fattorino della pizza per conquistare il suo cuore.",
+      "cover": "https://m.media-amazon.com/images/M/MV5BMTIxMDk1Njc4N15BMl5BanBnXkFtZTYwOTMyNjk2._V1_.jpg",
+      "available": false,
+      "id": 2
+    }
+  ],
+  "favorites": []
+}

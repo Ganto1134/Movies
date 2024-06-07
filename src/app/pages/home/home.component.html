@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <h2 class="mb-4">Film</h2>
+  <div class="row">
+    <div class="col-md-4" *ngFor="let movie of movies">
+      <div
+        class="card mb-4 h-100"
+        [ngClass]="{
+          'bg-success': movie.available,
+          'bg-danger': !movie.available
+        }"
+      >
+        <img [src]="movie.cover" class="card-img-top" alt="{{ movie.title }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ movie.title }}</h5>
+          <p class="card-text">{{ movie.description }}</p>
+          <a [routerLink]="['/edit', movie.id]" class="btn btn-primary"
+            >Modifica</a
+          >
+          <button
+            (click)="toggleFavorite(movie)"
+            class="btn"
+            [ngClass]="{
+              'btn-warning': !isFavorite(movie),
+              'btn-danger': isFavorite(movie)
+            }"
+          >
+            {{
+              isFavorite(movie)
+                ? "Rimuovi dai Preferiti"
+                : "Aggiungi ai Preferiti"
+            }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
