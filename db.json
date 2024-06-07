@@ -187,6 +187,17 @@
         "id": 4
       },
       "id": 10
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "Liquorice Pizza",
+        "description": "Il miglior film sulla pizza",
+        "cover": "https://pad.mymovies.it/filmclub/2021/09/074/locandinapg1.jpg",
+        "available": true,
+        "id": 1
+      },
+      "id": 12
     }
   ]
 }
