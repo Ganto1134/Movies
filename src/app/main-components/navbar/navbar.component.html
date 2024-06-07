@@ -1,6 +1,10 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg bg-info pb-2">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">Navbar</a>
+    <img
+      src="https://1000logos.net/wp-content/uploads/2022/09/Blockbuster-Logo-1996.png"
+      alt="logo"
+      class="logo"
+    />
     <button
       (click)="show = !show"
       class="navbar-toggler"
@@ -14,24 +18,38 @@
     <div class="collapse navbar-collapse" [ngClass]="{ show: show }">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/home"
+          <a
+            class="nav-link active"
+            aria-current="page"
+            routerLink="/home"
+            routerLinkActive="active"
             >Home</a
           >
         </li>
         <li *ngIf="!isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/">Accedi</a>
+          <a class="nav-link" routerLink="/" routerLinkActive="active"
+            >Accedi</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+          <a class="nav-link" routerLink="/dashboard" routerLinkActive="active"
+            >Dashboard</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/add">Aggiungi</a>
+          <a class="nav-link" routerLink="/add" routerLinkActive="active"
+            >Aggiungi</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <a class="nav-link" routerLink="/preferiti">Preferiti</a>
+          <a class="nav-link" routerLink="/preferiti" routerLinkActive="active"
+            >Preferiti</a
+          >
         </li>
         <li *ngIf="isLoggedIn" class="nav-item">
-          <button (click)="logout()" class="nav-link">Logout</button>
+          <button (click)="logout()" class="nav-link" routerLinkActive="active">
+            Logout
+          </button>
         </li>
       </ul>
     </div>

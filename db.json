@@ -5,6 +5,18 @@
       "password": "$2a$10$aIauI9llJNSDOdM67doBY.5zb6.N0PkDDXjP/llYkvclcZxFrbDKS",
       "nome": "antonio g",
       "id": 1
+    },
+    {
+      "email": "ganto1231@gmail.com",
+      "password": "$2a$10$707y6VLH6nmfoyP.fD7Pl.ZWayG5exqLKhoTKjyh1g4gP4/7claMu",
+      "nome": "ganto anto",
+      "id": 2
+    },
+    {
+      "email": "stefananto1@gmail.com",
+      "password": "$2a$10$Ajjz7TlF0CAgIXFk/m0Q5uoOZDh2qL4N5LarVhzsRrWXVb.LZ7N6q",
+      "nome": "stefan ro",
+      "id": 3
     }
   ],
   "movies-popular": [
@@ -21,7 +33,160 @@
       "cover": "https://m.media-amazon.com/images/M/MV5BMTIxMDk1Njc4N15BMl5BanBnXkFtZTYwOTMyNjk2._V1_.jpg",
       "available": false,
       "id": 2
+    },
+    {
+      "title": "Pizza : A Love Story",
+      "description": "La storia d'amore tra una margherita borghese ed una diavola di origini umili",
+      "cover": "https://m.media-amazon.com/images/I/91ygeWxJcBL._AC_UF1000,1000_QL80_.jpg",
+      "available": true,
+      "id": 3
+    },
+    {
+      "title": "Pizza in 3D",
+      "description": "Una pizza come non l'avete mai vista prima",
+      "cover": "https://static.tvtropes.org/pmwiki/pub/images/220px_pizza_2014_film_first_look_poster.png",
+      "available": false,
+      "id": 4
+    },
+    {
+      "title": "Pizza 2",
+      "description": "Il miglior film romantico dell'anno",
+      "cover": "https://play-lh.googleusercontent.com/qSibMuOjZhXMmQM9_o3sZjUHjRvbHXMKa7kYtUoLib34e9g0ZK0_CGTZXyAh0pXdoIvk=w240-h480-rw",
+      "available": true,
+      "id": 5
+    },
+    {
+      "title": "Scary Movie",
+      "description": "è una commedia horror del 2000, diretta da Keenen Ivory Wayans. Parodia film come \"Scream\" e \"So cosa hai fatto\", segue un gruppo di adolescenti perseguitati da un assassino mascherato dopo aver nascosto un incidente mortale. Con humor grossolano e situazioni assurde, prende in giro i clichè dei film horror.",
+      "cover": "https://m.media-amazon.com/images/I/51DIp35SkeL._AC_UF1000,1000_QL80_.jpg",
+      "available": false,
+      "id": 6
+    },
+    {
+      "title": "Scary Movie 2",
+      "description": "è una commedia horror del 2001, diretta da Keenen Ivory Wayans. Questa volta, parodia film come \"L'esorcista\" e \"Poltergeist\". La trama segue un gruppo di studenti universitari che, sotto il pretesto di un esperimento scientifico, passano una notte in una casa infestata. Il film è noto per il suo umorismo irriverente, gag slapstick e satira dei clichè horror.",
+      "cover": "https://m.media-amazon.com/images/I/71KYv-CX6AL._AC_UF894,1000_QL80_.jpg",
+      "available": true,
+      "id": 7
+    },
+    {
+      "title": "Scary Movie 3",
+      "description": "è una commedia horror del 2003, diretta da David Zucker. Parodia film come \"The Ring\", \"Signs\" e \"Matrix\". La trama segue una giornalista, interpretata da Anna Faris, che indaga su misteriose videocassette mortali e cerchi nel grano. Con il suo umorismo slapstick e battute satiriche, il film prende in giro i clichè dei film horror e fantascientifici.",
+      "cover": "https://m.media-amazon.com/images/M/MV5BNDE2NTIyMjg2OF5BMl5BanBnXkFtZTYwNDEyMTg3._V1_FMjpg_UX1000_.jpg",
+      "available": false,
+      "id": 8
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "userId": 1,
+      "movie": {
+        "title": "Pizza The Movie",
+        "description": "Quattro anni dopo la laurea, Kevin Miller non può andare avanti con la sua vita senza trovare un modo per riconquistare la sua vecchia cotta del liceo. E il suo mondo viene sconvolto quando accetta un lavoro come fattorino della pizza per conquistare il suo cuore.",
+        "cover": "https://m.media-amazon.com/images/M/MV5BMTIxMDk1Njc4N15BMl5BanBnXkFtZTYwOTMyNjk2._V1_.jpg",
+        "available": false,
+        "id": 2
+      },
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "title": "Scary Movie 2",
+        "description": "è una commedia horror del 2001, diretta da Keenen Ivory Wayans. Questa volta, parodia film come \"L'esorcista\" e \"Poltergeist\". La trama segue un gruppo di studenti universitari che, sotto il pretesto di un esperimento scientifico, passano una notte in una casa infestata. Il film è noto per il suo umorismo irriverente, gag slapstick e satira dei clichè horror.",
+        "cover": "https://m.media-amazon.com/images/I/71KYv-CX6AL._AC_UF894,1000_QL80_.jpg",
+        "available": true,
+        "id": 7
+      },
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "movie": {
+        "title": "Pizza : A Love Story",
+        "description": "La storia d'amore tra una margherita borghese ed una diavola di origini umili",
+        "cover": "https://m.media-amazon.com/images/I/91ygeWxJcBL._AC_UF1000,1000_QL80_.jpg",
+        "available": true,
+        "id": 3
+      },
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "title": "Pizza The Movie",
+        "description": "Quattro anni dopo la laurea, Kevin Miller non può andare avanti con la sua vita senza trovare un modo per riconquistare la sua vecchia cotta del liceo. E il suo mondo viene sconvolto quando accetta un lavoro come fattorino della pizza per conquistare il suo cuore.",
+        "cover": "https://m.media-amazon.com/images/M/MV5BMTIxMDk1Njc4N15BMl5BanBnXkFtZTYwOTMyNjk2._V1_.jpg",
+        "available": false,
+        "id": 2
+      },
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "title": "Scary Movie 2",
+        "description": "è una commedia horror del 2001, diretta da Keenen Ivory Wayans. Questa volta, parodia film come \"L'esorcista\" e \"Poltergeist\". La trama segue un gruppo di studenti universitari che, sotto il pretesto di un esperimento scientifico, passano una notte in una casa infestata. Il film è noto per il suo umorismo irriverente, gag slapstick e satira dei clichè horror.",
+        "cover": "https://m.media-amazon.com/images/I/71KYv-CX6AL._AC_UF894,1000_QL80_.jpg",
+        "available": true,
+        "id": 7
+      },
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "movie": {
+        "title": "Liquorice Pizza",
+        "description": "Il miglior film sulla pizza",
+        "cover": "https://pad.mymovies.it/filmclub/2021/09/074/locandinapg1.jpg",
+        "available": true,
+        "id": 1
+      },
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "Scary Movie 2",
+        "description": "è una commedia horror del 2001, diretta da Keenen Ivory Wayans. Questa volta, parodia film come \"L'esorcista\" e \"Poltergeist\". La trama segue un gruppo di studenti universitari che, sotto il pretesto di un esperimento scientifico, passano una notte in una casa infestata. Il film è noto per il suo umorismo irriverente, gag slapstick e satira dei clichè horror.",
+        "cover": "https://m.media-amazon.com/images/I/71KYv-CX6AL._AC_UF894,1000_QL80_.jpg",
+        "available": true,
+        "id": 7
+      },
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "Scary Movie",
+        "description": "è una commedia horror del 2000, diretta da Keenen Ivory Wayans. Parodia film come \"Scream\" e \"So cosa hai fatto\", segue un gruppo di adolescenti perseguitati da un assassino mascherato dopo aver nascosto un incidente mortale. Con humor grossolano e situazioni assurde, prende in giro i clichè dei film horror.",
+        "cover": "https://m.media-amazon.com/images/I/51DIp35SkeL._AC_UF1000,1000_QL80_.jpg",
+        "available": false,
+        "id": 6
+      },
+      "id": 8
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "Pizza 2",
+        "description": "Il miglior film romantico dell'anno",
+        "cover": "https://play-lh.googleusercontent.com/qSibMuOjZhXMmQM9_o3sZjUHjRvbHXMKa7kYtUoLib34e9g0ZK0_CGTZXyAh0pXdoIvk=w240-h480-rw",
+        "available": true,
+        "id": 5
+      },
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "movie": {
+        "title": "Pizza in 3D",
+        "description": "Una pizza come non l'avete mai vista prima",
+        "cover": "https://static.tvtropes.org/pmwiki/pub/images/220px_pizza_2014_film_first_look_poster.png",
+        "available": false,
+        "id": 4
+      },
+      "id": 10
+    }
+  ]
 }

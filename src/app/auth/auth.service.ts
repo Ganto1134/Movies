@@ -37,9 +37,12 @@ export class AuthService {
   registerUrl:string = 'http://localhost:3000/register'
   usersUrl: string = 'http://localhost:3000/users';
 
-  register(newUser:Partial<iUser>):Observable<iAuthResponse>{
-    return this.http.post<iAuthResponse>(this.registerUrl,newUser)
-
+  register(newUser: Partial<iUser>): Observable<iAuthResponse> {
+    return this.http.post<iAuthResponse>(this.registerUrl, newUser).pipe(
+      tap(() => {
+        this.router.navigate(['/']);
+      })
+    );
   }
 
   login(authData:iAuthData):Observable<iAuthResponse>{
